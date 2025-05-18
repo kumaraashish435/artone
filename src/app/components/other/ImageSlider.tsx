@@ -10,12 +10,12 @@ type Slide = {
 };
 
 const slides: Slide[] = [
-  { image: "src/assets/images/rx8yiXQAYcJ2anf8tf34jG1K9o.avif" },
-  { image: "src/assets/images/OsUZnZkbS3gcnAPI3U1U7kV69E.avif" },
-  { image: "src/assets/images/G9dElxhCARLvBRI2SYFPuFXb3Cs.avif" },
-  { image: "src/assets/images/d2ALQdwcyeDXBdx2YUVfURRzGPI.avif" },
-  { image: "src/assets/images/cnueJHXxK99hpuLujo82aW9IwTQ.avif" },
-  { image: "src/assets/images/8znT9YsknaKlYw4tPSxyVSAiFiU.avif" },
+  { image: "/images/rx8yiXQAYcJ2anf8tf34jG1K9o.avif" },
+  { image: "/images/OsUZnZkbS3gcnAPI3U1U7kV69E.avif" },
+  { image: "/images/G9dElxhCARLvBRI2SYFPuFXb3Cs.avif" },
+  { image: "/images/d2ALQdwcyeDXBdx2YUVfURRzGPI.avif" },
+  { image: "/images/cnueJHXxK99hpuLujo82aW9IwTQ.avif" },
+  { image: "/images/8znT9YsknaKlYw4tPSxyVSAiFiU.avif" },
 ];
 
 const ImageSlider: React.FC = () => {

@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
+import fileLogo from "/file.svg";
+
 
 export default function Sidebar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +48,8 @@ export default function Sidebar() {
       <nav className="md:hidden fixed top-0 left-0 right-0 bg-white z-30 shadow-lg">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="w-8 h-8">
-            <img className="w-full h-auto" src="src/assets/file.svg" alt="logo" />
+          <img src={fileLogo} alt="logo" />
+
           </div>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -110,7 +113,7 @@ export default function Sidebar() {
             {/* Logo */}
             <div className="mb-8 w-full flex justify-center transform hover:scale-105 transition-transform duration-200">
               <span className="text-2xl font-bold">
-                <img className="w-full h-auto" src="src/assets/file.svg" alt="logo" />
+                <img className="w-full h-auto" src={fileLogo} alt="logo" />
               </span>
             </div>
 

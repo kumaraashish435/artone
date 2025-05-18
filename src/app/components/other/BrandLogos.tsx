@@ -6,12 +6,12 @@ type Brand = {
 };
 
 const brands: Brand[] = [
-  { name: "Apple", logo: "src/assets/logos/apple-svgrepo-com.svg" },
-  { name: "Logitech", logo: "src/assets/logos/brand-logitech-svgrepo-com.svg" },
-  { name: "Google", logo: "src/assets/logos/google-2015-logo-svgrepo-com.svg" },
-  { name: "Samsung", logo: "src/assets/logos/samsung-svgrepo-com.svg" },
-  { name: "Netflix", logo: "src/assets/logos/netflix-2-logo-svgrepo-com.svg" },
-  { name: "Lenovo", logo: "src/assets/logos/lenovo-svgrepo-com.svg" },
+  { name: "Apple", logo: "/logos/apple-svgrepo-com.svg" },
+  { name: "Logitech", logo: "/logos/brand-logitech-svgrepo-com.svg" },
+  { name: "Google", logo: "/logos/google-2015-logo-svgrepo-com.svg" },
+  { name: "Samsung", logo: "/logos/samsung-svgrepo-com.svg" },
+  { name: "Netflix", logo: "/logos/netflix-2-logo-svgrepo-com.svg" },
+  { name: "Lenovo", logo: "/logos/lenovo-svgrepo-com.svg" },
 ];
 
 const BrandLogos: React.FC = () => {
