@@ -2,12 +2,10 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function Sidebar() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
       if (window.innerWidth >= 768) {
         setIsMenuOpen(false);
       }
