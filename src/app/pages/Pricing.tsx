@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AnimatedText from '../components/text/AnimatedText';
 
 const Pricing = () => {
   const [isAnnual, setIsAnnual] = useState(true);
@@ -59,16 +60,21 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-2 sm:py-12 sm:px-4 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen ">
+      <AnimatedText lines={[
+        "The design and product partner", 
+        "for your startup, built for the" ,
+        "speed and flexibility you need."
+      ]}/>
+      <div className="max-w-7xl pt-10 mx-auto">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12">
+        <div className=" mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">Simple, Transparent Pricing</h1>
           <p className="text-base sm:text-xl text-gray-600">Choose the perfect plan for your needs</p>
         </div>
 
         {/* Billing Toggle */}
-        <div className="flex justify-center items-center mb-8 sm:mb-12">
+        <div className="flex  items-center mb-8 sm:mb-12">
           <span className={`text-xs sm:text-sm ${!isAnnual ? 'text-gray-900' : 'text-gray-500'}`}>Monthly</span>
           <button
             onClick={() => setIsAnnual(!isAnnual)}

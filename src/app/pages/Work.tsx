@@ -1,3 +1,5 @@
+import AnimatedText from "../components/text/AnimatedText";
+
 const Work = () => {
   const projects = [
     {
@@ -39,16 +41,21 @@ const Work = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-2 sm:px-4 md:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen sm:px-4 ">
+      <AnimatedText lines={[
+        "The design and product partner", 
+        "for your startup, built for the" ,
+        "speed and flexibility you need."
+      ]}/>
+      <div className="max-w-7xl mt-10 mx-auto">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12">
+        <div className=" mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">Our Work</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-600">Explore our latest projects and case studies</p>
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12">
+        <div className="flex flex-wrap   gap-2 sm:gap-4 mb-8 sm:mb-12">
           <button className="px-4 sm:px-6 py-2 rounded-full bg-black text-white hover:bg-black text-sm sm:text-base">
             All
           </button>
